@@ -1,0 +1,173 @@
+
+/*.box{
+    width:900px;
+    float:right;
+    border:1px solid black;
+}
+.box ul li{
+    width:120px;
+    float:left;
+    margin:10px auto;
+    text-align:center;
+}
+.box ul li a{
+    text-decoration: none;
+    color:blue;
+}
+.box ul li:hover{
+    background-color: aquamarine;
+}
+.box ul li a:hover{
+    color:blueviolet;
+}
+body{
+    font-family: latha;
+    color:white;
+    background:url(pic2.jpg)no-repeat;
+    background-size:cover;
+    
+   
+
+}
+
+/*#navbar a{
+    text-decoration: none;  
+   background-color: pink;
+   
+}
+
+ #navbar ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    width:60px;
+  
+    
+}
+/*li{
+    display:block;
+    background-color:cornflowerblue;
+    
+}
+li a{
+    display:inline;
+   
+  
+
+}*/
+
+*{
+    margin:0;
+    padding:0;
+    font-family:verdana;
+}
+.main{
+    height:100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url(pic2.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow-x:hidden;
+    position:relative;
+
+}
+.main h1{
+    margin: 10px 20px;
+    font-family: Verdana;
+}
+.nav{
+    display: flex;
+    padding:40px 120px;
+}
+
+.navlinks{
+    flex:1;
+}
+.navlinks ul{
+    margin-left:50px;
+    display:inline;
+}
+.navlinks ul li{
+    list-style:none;
+    display:inline-block;
+    padding:8px 25px;
+}
+.navlinks ul a{
+    color:#fff;
+    text-decoration:none;
+    font-size:13px;
+}
+.navlinks ul li::after{
+    content:'';
+    width:0;
+    height:2px;
+    background:khaki;
+    display:block;
+    margin:auto;
+    transition: .5s;
+}
+.navlinks ul li:hover::after{
+    width:100%;
+
+}
+.btn{
+    padding:10px 20px;
+    border:0;
+    background: khaki;
+    font-weight: bold;
+}
+.navlinks button{
+    float:right;
+    border-radius: 4px;
+}
+.banner-title{
+    margin: 80px 130px;
+    color:#fff;
+}
+
+.banner-title h1{
+    font-size: 64px;
+    margin-bottom: 30px;
+}
+
+.banner-title button{
+    border-radius:4px;
+}
+
+.vertical-bar{
+    height:100%;
+    background:#000;
+    top:0;
+    left:0;
+    position:absolute;
+
+}
+.search-icon{
+    height: 60%;
+    width:80px;
+
+}
+.search-icon .fa{
+    margin:45px 23px;
+    display:block;
+    color: #fff;
+    font: size 30px;
+    cursor:pointer;
+}
+.social-icons{
+    height:35%;
+    width:80px;
+    background:khaki;
+    text-align:center;
+    padding-top:27%;
+    bottom:0;
+    position:absolute;
+}
+.social-icons .fa-brands{
+    margin:15px 23px;
+    display:block;
+    padding:10px;
+    border:1px solid #000;
+    border-radius:50%;
+    cursor:pointer;
+}
+

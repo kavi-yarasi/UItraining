@@ -1,0 +1,17 @@
+.main{
+    border:5px solid grey;
+    width:500px;
+    min-height:500px;
+}
+.box{
+    width:100px;height: 100px;
+}
+.box1{
+    background-color: teal;
+}
+.box2{
+    background-color:tomato
+}
+.box3{
+    background-color:blue
+}

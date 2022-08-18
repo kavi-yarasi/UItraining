@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog post</title>
+</head>
+<body style="background-image:url(https://wallpapercave.com/wp/wp3477365.jpg)" style="font-family:Haettenschweiler">
+    <div  style="color: rgb(49, 10, 10);"><CENTER><h1>COOKIES</h1></CENTER>
+        <center><img src="images.jfif" alt="" style="border: 1px solid maroon;"></center>
+    </div>
+    <div  style="color: rgb(49, 10, 10);">
+        <p leftmargin="100px" style="font-size:medium ;">
+            HTTP cookies (also called web cookies, Internet cookies, browser cookies, or simply cookies) are small blocks of data created by a web server while a user is browsing a website and placed on the user's computer or other device by the user's web browser. Cookies are placed on the device used to access a website, and more than one cookie may be placed on a user's device during a session.
+
+Cookies serve useful and sometimes essential functions on the web. They enable web servers to store stateful information (such as items added in the shopping cart in an online store) on the user's device or to track the user's browsing activity (including clicking particular buttons, logging in, or recording which pages were visited in the past). They can also be used to save for subsequent use information that the user previously entered into form fields, such as names, addresses, passwords, and payment card numbers.The term "cookie" was coined by web-browser programmer <b>Lou Montulli</b>. It was derived from the term <b>"magic cookie"</b>, which is a packet of data a program receives and sends back unchanged, used by <b>Unix</b> programmers. The term magic cookie itself derives from the fortune cookie, which is a cookie with an embedded message. The different types of cookies are:</p>
+        <ul style="list-style-type:square; font-size:medium;">
+            <li>Session cookie</li>
+            <li>Persistent cookie</li>
+            <li>Secure cookie</li>
+            <li>HTTP only cookie</li>
+            <li>Same site cookie</li>
+            <li>Third party cookie</li>
+            <li>Zombie cookie</li>  
+</div> 
+    </ul>
+<table style="width:100%">
+    <tr>
+        <th>Cookie type</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+       <td>Session cookie</td>
+       <td>Persistent cookie</td>
+       <td>Secure cookie</td>
+       <td>HTTP only cookie</td>
+       <td>Same site cookie</td>
+       <td>Third party cookie</td>
+       <td>Zombie cookie</td>
+    </tr>
+    <tr>
+        <td>A session cookie (also known as an in-memory cookie, transient cookie or non-persistent cookie) exists only in temporary memory while the user navigates a website. Session cookies expire or are deleted when the user closes the web browser. Session cookies are identified by the browser by the absence of an expiration date assigned to them.</td>
+        <td>A persistent cookie expires at a specific date or after a specific length of time. For the persistent cookie's lifespan set by its creator, its information will be transmitted to the server every time the user visits the website that it belongs to, or every time the user views a resource belonging to that website from another website (such as an advertisement).</td>
+        <td>A secure cookie can only be transmitted over an encrypted connection (i.e. HTTPS). They cannot be transmitted over unencrypted connections (i.e. HTTP). This makes the cookie less likely to be exposed to cookie theft via eavesdropping. A cookie is made secure by adding the Secure flag to the cookie.</td>
+        <td>An http-only cookie cannot be accessed by client-side APIs, such as JavaScript. This restriction eliminates the threat of cookie theft via cross-site scripting (XSS). However, the cookie remains vulnerable to cross-site tracing (XST) and cross-site request forgery (CSRF) attacks. A cookie is given this characteristic by adding the HttpOnly flag to the cookie.</td>
+        <td>The attribute SameSite can have a value of Strict, Lax or None.With attribute SameSite=Strict, the browsers would only send cookies to a target domain that is the same as the origin domain. This would effectively mitigate cross-site request forgery (CSRF) attacks. With SameSite=Lax, browsers would send cookies with requests to a target domain even it is different from the origin domain, but only for safe requests such as GET (POST is unsafe) and not third-party cookies (inside iframe). Attribute SameSite=None would allow third-party (cross-site) cookies, however, most browsers require secure attribute on SameSite=None cookies.</td>
+        <td>Normally, a cookie's domain attribute will match the domain that is shown in the web browser's address bar. This is called a first-party cookie. A third-party cookie, however, belongs to a domain different from the one shown in the address bar. This sort of cookie typically appears when web pages feature content from external websites, such as banner advertisements. This opens up the potential for tracking the user's browsing history and is often used by advertisers in an effort to serve relevant advertisements to each user.
+            As an example, suppose a user visits www.example.org. This website contains an advertisement from ad.foxytracking.com, which, when downloaded, sets a cookie belonging to the advertisement's domain (ad.foxytracking.com). Then, the user visits another website, www.foo.com, which also contains an advertisement from ad.foxytracking.com and sets a cookie belonging to that domain (ad.foxytracking.com). Eventually, both of these cookies will be sent to the advertiser when loading their advertisements or visiting their website. The advertiser can then use these cookies to build up a browsing history of the user across all the websites that have ads from this advertiser, through the use of the HTTP referer header field.</td>
+        <td>A zombie cookie is data and code that has been placed by a web server on a visitor's computer or other device in a hidden location outside the visitor's web browser's dedicated cookie storage location, and that automatically recreates a HTTP cookie as a regular cookie after the original cookie had been deleted.</td>
+    </tr>
+</table>
+<style>
+    table, th, td {
+  border:1px solid black;
+}
+</style>
+</body>
+</html>
+

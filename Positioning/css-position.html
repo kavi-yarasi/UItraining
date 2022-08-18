@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p  class="ab"> this world</p>
+        <h2 CLASS="ba">kaviyarasi</h2>
+        <h3 class="cd">
+            
+            Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+        </h3>
+        <h4 class="dc">
+            A fixed element does not leave a gap in the page where it would normally have been located.
+<br>
+            Notice the fixed element in the lower-right corner of the page. 
+        </h4>
+    </div>
+</body>
+<style>
+    p.ab{
+        position: static;
+        color: blue;
+    }
+    h2.ba{
+        position:relative;
+        color:bisque;
+        left: 100px;
+    }
+    h3.cd{
+        position:absolute;
+        color:aquamarine;
+        left:500px;
+        right:600px;
+        top:50px;
+        
+    }
+    h4.dc{
+        position:sticky;
+        color:chartreuse;
+    }
+
+</style>
+</html>
