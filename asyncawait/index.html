@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Promise</title>
+
+</head>
+
+<body>
+
+    <script>
+
+        //let promise = new Promise(function (resolve, reject) {
+
+   // setTimeout(function () {
+
+    //resolve('Promise resolved')}, 4000);
+
+//});
+
+
+
+
+//async function asyncFunc() {
+
+
+
+   
+
+    //let result = await promise;
+
+
+
+    //console.log(result);
+
+    //console.log('hello');
+
+//}
+
+
+
+
+//asyncFunc();
+
+
+
+//example 2
+
+
+
+//const getData = async() => {
+
+  //  var y = await "Hello World";
+
+    //console.log(y);
+
+//}
+
+ 
+
+//console.log(1);
+
+//getData();
+
+//console.log(2);
+
+
+
+//example 3
+
+
+
+async function example() {
+
+
+
+let promise = new Promise((resolve, reject) => {
+
+  setTimeout(() => resolve("done!"), 2000)
+
+});
+
+
+
+let result = await promise; // wait until the promise resolves (*)
+
+
+
+alert(result); // "done!"
+
+}
+
+
+
+example();
+
+
+
+
+    </script>
+
+   
+
+</body>
+
+</html>

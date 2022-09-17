@@ -1,0 +1,58 @@
+<div class="container">
+  <h1>user registration</h1>
+  <form #login="ngForm" (ngSubmit)="submit(login)">
+     <div class="form-group">
+       <label for="firstname">fname</label>
+       <br>
+       <input #name="ngModel" type="text" name="firstname" class="form-control" ngModel required minlength="5">
+       <div *ngIf="name.touched && name.invalid">
+          <p *ngIf="name.errors?.['required']">
+              Name is required.
+          </p>
+          <p *ngIf="name.errors?.['minlength']">
+              short Firstname
+          </p>
+       </div>
+      </div>
+      <div class="form-group">
+          <label for="lastname">lname</label>
+          <br>
+          <input  #name1="ngModel" type="text" name="lastname" class="form-control" ngModel  required minlength="3">
+          <div *ngIf="name1.touched && name1.invalid">
+              <p *ngIf="name1.errors?.['required']">
+                  name is required.
+              </p>
+              <p *ngIf="name1.errors?.['minlength']">
+                  short lastname
+              </p>
+          </div>
+         </div>
+       <div class="form-group">
+          <label for="email">email</label>
+          <br>
+          <input #name2="ngModel" type="text" name="email" class="form-control" ngModel  required minlength="5">
+          <div *ngIf="name2.touched && name2.invalid">
+              <p *ngIf="name2.errors?.['required']">
+                  email-id is required.
+              </p>
+              <p *ngIf="name2.errors?.['minlength']">
+                  invalid email-id
+              </p>
+           </div>
+         </div>
+      <div class="form-group">
+          <label for="password">password</label>
+          <br>
+          <input #name4="ngModel" type="text" name="password" class="form-control" ngModel required minlength="6">
+          <div *ngIf="name4.touched && name4.invalid">
+              <p *ngIf="name4.errors?.['required']">
+                  password is required.
+              </p>
+              <p *ngIf="name4.errors?.['minlength']">
+                  password is too short
+              </p>
+           </div>
+         </div>
+         <button class="btn btn-primary " type="submit"> SUBMIT</button>
+  </form>
+</div>
